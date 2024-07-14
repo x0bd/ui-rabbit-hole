@@ -9,7 +9,7 @@ function App() {
 
 			<div className="overflow-clip opacity-30">
 				<p className="break-all text-[30vw] text-zinc-600">
-					Beautiful sticky navigation that plays peak-a-boo on scroll
+					Animations that play peak-a-boo on scroll
 				</p>
 			</div>
 		</div>
@@ -46,7 +46,7 @@ const Nav = () => {
 			transition={{ duration: 0.2 }}
 			className="fixed top-0 z-10 flex w-full justify-center pt-3"
 		>
-			<nav className="max-w-[600px] bg-zinc-100 border-2 border-zinc-600 w-full rounded-full mx-auto flex items-center justify-between px-8">
+			<nav className="max-w-[640px] bg-zinc-100 border-2 border-zinc-600 w-full rounded-full mx-auto flex items-center justify-between px-8">
 				<div className="flex h-[80px] min-h-[60px] items-center gap-x-10">
 					<a href="/" className="flex items-center gap-2">
 						<PawPrint className="stroke h-11 w-11" />
@@ -58,8 +58,12 @@ const Nav = () => {
 					</div>
 				</div>
 				<div className="flex items-center gap-2">
-					<Sun />
-					<Ghost />
+					<Sun size={30} />
+					<img
+						src="./shadcn.jpeg"
+						alt="shadcn"
+						className="h-10 w-10 rounded-full"
+					/>
 				</div>
 			</nav>
 		</motion.div>

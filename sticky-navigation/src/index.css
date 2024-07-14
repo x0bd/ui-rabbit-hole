@@ -4,4 +4,9 @@
 
 body {
 	@apply bg-zinc-50;
+	font-family: "Geist Sans", sans-serif;
+}
+
+nav {
+	font-family: "Geist Mono", sans-serif;
 }
